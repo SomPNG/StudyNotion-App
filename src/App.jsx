@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Navbar from "./Components/Navbar"
-import { Route, Routes } from 'react-router-dom'
+import {Route, Routes } from 'react-router-dom'
 import Home from "./Pages/Home"
 import Login from "./Pages/Login"
 import Signup from "./Pages/Signup"
@@ -18,12 +18,12 @@ function App() {
       <Navbar isLog={isLog} setIsLog={setIsLog}/>
 
 
-      <Routes>
-        <Route index path='/' element={<Home/>}/>
-        <Route path='/login' element={<Login setIsLog={setIsLog}/>}/>
-        <Route path='/signup' element={<Signup setIsLog={setIsLog}/>}/>
-        <Route path='/dashboard' element={<Dashboard/>}/>
-      </Routes>
+        <Routes>
+          <Route index path='/' element={<Home/>}/>
+          <Route path='/login' element={<Login setIsLog={setIsLog}/>}/>
+          <Route path='/signup' element={<Signup setIsLog={setIsLog}/>}/>
+          <Route path='/dashboard' element={<Dashboard/>}/>
+        </Routes>
 
       <ToastContainer></ToastContainer>
     </div>
